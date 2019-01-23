@@ -9,6 +9,11 @@
     <meta name="author" content="">
     <link rel="icon" href="assets/img/favicon.ico">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+    <!-- BOOTSTRAP CORE CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FONTAWESOME FONTS -->
     <link href="assets/css/font-awesome/css/font-awesome.min.css">
     
     <!-- GOOGLE FONTS -->
@@ -24,7 +29,33 @@
 <body>
 
     <!-- HEADER -->
-    <header></header>
+    <header class="site-header" role="banner">
+        <!-- NAVBAR =========================== -->
+        <div class="navbar-wrapper">
+            <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>   
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/"><img src="assets/img/logo.png" alt="Bootstrap to Wordpress"></a>
+                    </div> <!-- navbar-header -->
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="/">Home</a></li>
+                            <li class="active"><a href="blog.html">Blog</a></li>
+                            <li class="active"><a href="resources.html">Resources</a></li>
+                            <li class="active"><a href="contact.html">Contact</a></li>
+                        </ul> <!-- nav -->
+                    </div> <!-- navbar-collapse -->
+                </div> <!-- container -->
+            </div> <!-- navbar -->
+        </div> <!-- navbar-wrapper -->
+
+    </header>
 
     <!-- HERO -->
     <section></section>
