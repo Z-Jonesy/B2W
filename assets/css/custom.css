@@ -383,7 +383,8 @@ footer li.signup-link a:hover{
   border-radius: 4px;
 }
 .post header,
-.post .post-excerpt {
+.post .post-excerpt,
+.post .post-body {
   padding: 20px;
 } 
 .post header h1,
