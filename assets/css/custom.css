@@ -209,6 +209,10 @@ section{
   padding: 80px 0;
 }
 
+section.main-content{
+  padding: 40px 0;
+}
+
 .section-header{
   text-align: center;
 }
@@ -496,6 +500,15 @@ footer li.signup-link a:hover{
   border-top: solid 1px #eee;
 }
 
+/* RESOURCES */
+.resource{
+  width: 31.3333333%;
+  float: left;
+  margin: 0 3% 40px 0;
+}
+.resource:nth-child(3n){
+  margin-right: 0;
+}
 
 /* CUSTOM ICON SPRITES */
 i.ci{
@@ -546,7 +559,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 768px){
   .logo {
     width: 50%;
   }
@@ -558,6 +571,12 @@ textarea {
   #featurette iframe {
     height: 240px;
   }
+
+  .resource{
+    width: 48%;
+    margin-right: 2%;
+    min-height: 800px;
+  }
 }
 
 @media screen and (max-width: 586px){
@@ -565,5 +584,11 @@ textarea {
     height: 100px;
     width: 100px;
     font-size: 22px;
+  }
+
+  .resource{
+    width: 100%;
+    margin-right: 0;
+    min-height: 0;
   }
 }
