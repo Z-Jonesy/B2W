@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html">
-    <title>Bootstrap to Wordpress</title>
+    <title>Contact | Bootstrap to Wordpress</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -29,7 +29,7 @@
     <![endif]-->
 </head>
 
-<body class="blog">
+<body class="full-width contact">
 
 <!-- HEADER -->
 <header class="site-header" role="banner">
@@ -49,9 +49,9 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="index.html">Home</a></li>
-                        <li class="active"><a href="blog.html">Blog</a></li>
+                        <li><a href="blog.html">Blog</a></li>
                         <li><a href="resources.html">Resources</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li class="active"><a href="contact.html">Contact</a></li>
                     </ul> <!-- nav -->
                 </div> <!-- navbar-collapse -->
             </div> <!-- container -->
@@ -59,85 +59,46 @@
     </div> <!-- navbar-wrapper -->
 
 </header>
-
-<section class="feature-image feature-image-default-alt" data-type="background" data-speed="2">
-    <h1 class="page-title">Blog</h1>
+<!-- FEATURE IMAGE -->
+<section class="feature-image " data-type="background" data-speed="2">
+    <h1 class="page-title">Contact</h1>
 </section>
 
-<!-- SECTION TITLE -->
+<!-- MAIN CONTENT -->
 <div class="container">
     <div class="row" id="primary">
-        <main id="content" class="col-sm-8" role="main">
-            <article class="post">
-                <header>
-                    <h3><a href="blogpost.html">Blog title here</a></h3>
-                    <div class="post-details">
-                        <i class="fa fa-user">Brad Hussey</i>
-                        <i class="fa fa-clock_o"><time>march 29, 2019</time></i>
-                        <i class="fa fa-folder"><a href="">Tutorials</a>, <a href="">Coding</a></i>
-                        <i class="fa fa-tags"><a href="">Wordpress</a>, <a href="">Premius</a></i>
-                        <div class="post-comments-badge">
-                            <a href=""><span class="fa fa-comment"></span> 168</a>
-                        </div> <!-- post-comments-badge -->
-                    </div><!-- post-details -->
-                </header> <!-- header -->
-                <div class="post-image">
-                    <img src="assets/img/hero-bg.jpg" alt="Hero image">
-                </div> <!-- post-image -->
-                <div class="post-excerpt">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-                        <a href="post.html">Continue reading &raquo;</a></p>
-
-                </div> <!-- post-excerpt -->
-            </article> <!-- article -->
-        </main> <!-- main -->
-
-        <!-- SIDEBAR --------------------------------------------------------------->
-        <aside class="col-sm-4">
-            <div class="widget">
-                <h4>Join our mailing list</h4>
-                <p>Keep up to date with the latest news, and we'll <strong>send you something special</strong></p>
-                <button class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#myModal">
-                    Click here to subscribe
-                </button>
-            </div> <!-- widget -->
-            <div class="widget">
-                <form role="form" class="search-form" >
-                    <label for="sidebar-search" class="sr-only"></label>
-                    <input type="text" id="sidebar-search" placeholder="Search the blog...">
-                </form>
-            </div> <!-- widget -->
-            <div class="widget">
-                <h4>About Bootstrap to Wordpress</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-            </div> <!-- widget -->
-            <div class="widget">
-                <h4>Recent Posts</h4>
-                <ul>
-                    <li><a href="">Blog post #1</a></li>
-                    <li><a href="">Blog post #2</a></li>
-                    <li><a href="">Blog post #3</a></li>
-                    <li><a href="">Blog post #4</a></li>
-                    <li><a href="">Blog post #5</a></li>
-                </ul>
-            </div> <!-- widget -->
-            <div class="widget">
-                <h4>Categories</h4>
-                <ul>
-                    <li><a href="">Category #1</a></li>
-                    <li><a href="">Category #2</a></li>
-                    <li><a href="">Category #3</a></li>
-                    <li><a href="">Category #4</a></li>
-                    <li><a href="">Category #5</a></li>
-                    <li><a href="">Category #6</a></li>
-                </ul>
-            </div> <!-- widget -->
-        </aside>
-
-
-    </div>  <!-- row -->
-</div>  <!-- container -->
-
+        <div id="content" class="col-sm-12">
+            <section class="main-content">
+                <p class="lead">
+                    Have any questions about the course? Feel free to get in touch with me! I &rsquo;ll do my best
+                </p>
+                <form action="" role="form" class="clearfix">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="contact-name" class="sr-only">Name</label>
+                                <input type="text" class="form-control" id="contact-name" placeholder="Your name">
+                            </div><!-- form-group -->
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="contact-email" class="sr-only">Email</label>
+                                <input type="email" class="form-control" id="contact-email" placeholder="Your email">
+                            </div><!-- form-group -->
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="contact-words" class="sr-only">Message</label>
+                                <textarea class="form-control input-lg" name="" id="contact-words" placeholder="Your message" rows="3"></textarea>
+                                <input type="submit" class="btn btn-info btn-lg pull-right" value="Get in touch &raquo;">
+                            </div><!-- form-group -->
+                        </div>
+                    </div><!-- row -->
+                </form><!-- form -->
+            </section><!-- main-content -->
+        </div><!-- content -->
+    </div><!-- row -->
+</div><!-- container -->
 
 <!-- SIGNUP -->
 <section id="signup" data-type="background" data-speed="4">
@@ -224,6 +185,7 @@
 <script src="//use.typekit.net/gla7wnd.js"></script>
 <script>try{Typekit.load();}catch(e){}</script> -->
 
-</body>
 
+
+</body>
 </html>
