@@ -25,9 +25,9 @@
 
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&amp;subset=latin-ext" rel="stylesheet">
+    
 
-
-	<?php wp_head(); ?>
+    <?php wp_head(); ?>
 
     <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -65,7 +65,7 @@
                                 'container_class'   => 'navbar-collapse collapse',
                                 'menu_class'        => 'nav navbar-nav navbar-right'
 
-                        ))
+                        ));
 
                     ?>
 
