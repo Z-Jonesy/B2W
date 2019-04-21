@@ -1,6 +1,6 @@
 <?php
 /**
- * The header for our theme
+ * The header for our theme. But this one is by Z
  *
  * This is the template that displays all of the <head> section and everything up until <div id="content">
  *
@@ -9,23 +9,22 @@
  * @package Bootstrap_to_Wordpress
  */
 
-?>
-<!doctype html>
-<html <?php language_attributes(); ?>>
+?><!DOCTYPE html>
+<html <?php language_attributes(); ?> >
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
     <!-- BOOTSTRAP CORE CSS -->
-    <link href=<?php bloginfo('stylesheet_directory'); ?>"/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- FONTAWESOME FONTS -->
-    <link href=<?php bloginfo('stylesheet_directory'); ?>"/assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&amp;subset=latin-ext" rel="stylesheet">
-    
+
 
     <?php wp_head(); ?>
 
