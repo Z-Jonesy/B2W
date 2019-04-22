@@ -88,7 +88,7 @@
 
 <!-- BOOTSTRAP CORE JAVASCRIPT -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src=" <?php bloginfo('template_directory'); ?>/assets/js/jquery-2.1.1.js"></script>
+<script src=" <?php bloginfo('template_directory'); ?>/assets/js/jquery-3.3.1.min.js"></script>
 <script src=" <?php bloginfo('template_directory'); ?>/assets/js/bootstrap.min.js"></script>
 <script src=" <?php bloginfo('template_directory'); ?>/assets/js/main.js"></script>
 
