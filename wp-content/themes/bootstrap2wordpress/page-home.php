@@ -174,10 +174,19 @@ get_header(); ?>
             
             <?php $loop = new WP_Query(array('post_type' => 'course_feature', 'orderby' => 'post_id', 'order' => 'ASC')); ?>
             <?php while ($loop->have_posts()) : $loop->the_post(); ?>
+<<<<<<< HEAD
             <div class="col-sm-2">
                 <i class="<?php the_field('course_feature_icon'); ?>"></i>
                 <h4><?php the_title(); ?></h4>
             </div><!-- end col -->
+=======
+
+            <div class="col-sm-2">
+                <i class=<?php the_field('course_feature_icon'); ?>></i>
+                <h4><?php the_title(); ?></h4>
+            </div><!-- end col -->
+
+>>>>>>> 672f799163cdac8c70b1cbd0730929c9cb338b57
             <?php endwhile; ?>
 
         </div><!-- row -->
