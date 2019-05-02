@@ -96,6 +96,7 @@ function bootstrap2wordpress_content_width() {
 	// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
 	$GLOBALS['content_width'] = apply_filters( 'bootstrap2wordpress_content_width', 640 );
 }
+
 add_action( 'after_setup_theme', 'bootstrap2wordpress_content_width', 0 );
 
 /**
@@ -110,10 +111,11 @@ function bootstrap2wordpress_widgets_init() {
 		'description'   => esc_html__( 'Add widgets here.', 'bootstrap2wordpress' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
 	) );
 }
+
 add_action( 'widgets_init', 'bootstrap2wordpress_widgets_init' );
 
 /**
@@ -130,6 +132,7 @@ function bootstrap2wordpress_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
+
 add_action( 'wp_enqueue_scripts', 'bootstrap2wordpress_scripts' );
 
 /**
@@ -159,3 +162,12 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/**
+ * Replaces the excerpt "more" text by a link
+ */
+function new_excerpt_more( $more ) {
+	global $post;
+
+	return '... <a class="moretag" href="' . get_permalink( $post->ID ) . '"> continue reading</a> ';
+}
+add_filter('excerpt_more','new_excerpt_more');
